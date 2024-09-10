@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic';
 import React from 'react';
 
+import { notFound } from 'next/navigation';
+
 // BlockRenderer takes a block as input and returns divs based on the block alias
 const BlockRenderer = (block: any) => {
   switch (block.alias) {
