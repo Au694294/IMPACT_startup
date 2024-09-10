@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    align-items: center;
+}
+
+.productContainer {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background: linear-gradient(140deg, #ffffff 0%, #e6ffd9 50%, #baffa1 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.productTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.detail {
+    margin: 10px 0;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.outOfStock {
+    color: red;
+}
+
+.reviewsContainer {
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviewsContainer h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.review strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.review p:first-of-type {
+    font-weight: bold;
+    color: #000;
+}
+
+.review p:nth-of-type(2) {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.review p:nth-of-type(3) {
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.checkoutButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.checkoutButton:hover {
+    background-color: #45a049;
+}
+
+.emptyBasket {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.removeButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.removeButton:hover {
+    background-color: #d32f2f;
+}

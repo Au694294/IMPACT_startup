@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    align-items: center;
+}
+
+.title {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.product {
+    background: linear-gradient(140deg, #ffffff 0%, #e6ffd9 50%, #baffa1 100%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listOfProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.backBtn {
+    font-size: 1.5rem;
+    color: #242424;
+    text-decoration: none;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #242424;
+    background-color: #ffffff;
+    margin-bottom: -10px;
+}
+
+.backBtn:hover {
+    color: #1a1a1a;
+    background-color: #baffa1;
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.loadMoreBtn {
+    font-size: 1.5rem;
+    color: #242424;
+    text-decoration: none;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #242424;
+    background-color: #ffffff;
+    margin-bottom: -10px;
+}
+
+.loadMoreBtn:hover {
+    color: #1a1a1a;
+    background-color: #baffa1;
+    border-radius: 15px;
+    transform: scale(1.1);  
+    transition: all 0.4s;
+}
+
+.addToBasketBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #292828;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addToBasketBtn:hover {
+    background-color: #5ff757;
+    color: #000000;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.detailsBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #292828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detailsBtn:hover {
+    background-color: #000000;
+}   
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.detailsBtn {
+    margin-right: 20px; 
+}
+

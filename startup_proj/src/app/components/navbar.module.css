@@ -1,0 +1,78 @@
+.link {
+    font-size: 1.5rem;
+    color: #676767;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 230px;
+    text-align: center; 
+    display: inline-block;
+}
+  
+  .link:hover {
+    color: #ffffff;
+    border-radius: 15px;
+    transform: scale(1.1);
+    font-weight: bold;
+    text-decoration: overline #baffa1;
+  }
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #000000;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0%;
+}
+
+.navbar ul {
+  display: flex; 
+  padding: 0; 
+  list-style: none; 
+}
+
+.navItem {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.cartButton {
+  background-color: #baffa1;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.cartButton p {
+  font-size: large;
+}
+
+.cartIcon {
+  font-size: 1.5rem; 
+}
+
+
+.cartButton:hover {
+  background-color: #98fb74;
+}
+
+.miniBasket {
+  color: #ff3f3f;
+  margin-left: 5px;
+  border: 2px solid #ff3f3f;
+  border-radius: 50%;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem; 
+}
+
