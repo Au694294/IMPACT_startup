@@ -5,16 +5,22 @@ const BlockRenderer = dynamic(() => import('./blockRenderer'), {loading: () => <
 
 // Generic page component, that renders blocks dynamically
 export const GenericPage = ({ pageData }: { pageData: any }) => {
+  // TEST: Log the blocks array from page
+  console.log("BLOCKS:", pageData.blocks);
+
   return (
     <div>
-      <div>
-        {pageData.blocks?.map((block: any, index: number) => (
+      {pageData.blocks && Array.isArray(pageData.blocks) ? (
+        // Map over each block in the pageData array
+        pageData.blocks.map((block: any, index: number) => (
           <div key={index}>
-            {/* Render blocks dynamically */}
-            <BlockRenderer {...block} />
+            {/* Pass each block to BlockRenderer */}
+            <BlockRenderer blocks={[block]} />
           </div>
-        ))}
-      </div>
+        ))
+      ) : (
+        <p>No blocks to display</p>
+      )}
     </div>
   );
-}; 
+};

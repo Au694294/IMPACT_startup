@@ -1,3 +1,4 @@
+import ImageBlock from "@/app/components/blocks/imageBlock";
 import test from "node:test";
 
 export const GetPageData = (page: string) => {
@@ -24,6 +25,10 @@ export const GetPageData = (page: string) => {
             alias: 'rteBlock',
             blockProps: mockBlocks.staff
           },
+          {
+            alias: 'imageBlock',
+            blockProps: mockBlocks.staff
+          }
         ]
       };
       break;
@@ -57,7 +62,7 @@ export const GetPageData = (page: string) => {
             blockProps: mockBlocks.test
           },
           {
-            alias: 'bannerBlock',
+            alias: 'heroBlock',
             blockProps: mockBlocks.test
           }
         ]
@@ -74,56 +79,39 @@ export const GetPageData = (page: string) => {
 // Mock data for blocks
 const mockBlocks = {
   test: {
-    rteBlock: (
-      <div style={{ textAlign: 'center' }}>
-        <h2>Test banner for hero page</h2>
-      </div>
-    ),
-    bannerBlock: (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-        <img style={{ width: '100%', marginBottom: '650px', marginTop: '20px' }} src="https://placehold.co/1000x300" />
-      </div>
-    )
+    rteBlock: {
+      content: 'Test hero banner for hero page',
+    },
+    heroBlock: {
+      imageUrl: 'https://placehold.co/1000x300',
+    }
   },
   contact: {
-    rteBlock: (
-      <div style={{ textAlign: 'center' }}>
-        <h2>Kontakt os</h2>
-        <p>Du kan kontakte os via email eller telefon.</p>
-      </div>
-    )
+    rteBlock: {
+      title: 'Kontakt os',
+      content: 'Du kan kontakte os via email eller telefon.',
+    }
   },
   staff: {
-    rteBlock: (
-      <div style={{ textAlign: 'center' }}>
-        <h2>Hvem er vi?</h2>
-      </div>
-    )
+    rteBlock: {
+      title: 'Hvem er vi?',
+      content: 'Vi er et team af erfarne frisører, der er klar til at hjælpe dig med en klipning til en god pris.',
+    },
+    imageBlock: {
+      imageUrl: './team.jpg',
+    }
   },
   home: {
-    rteBlock: (
-      <div>
-        <div style={{ textAlign: 'center', fontSize: '4.5rem' }}>
-          <h1>Din Lokale Frisør</h1>
-        </div>
-        <div style={{ textAlign: 'center', fontSize: '1.5rem' }}>
-          <h2>Studievenlige priser</h2>
-        </div>
-      </div>
-    ),
-    buttonBlock: (
-      <div style={{ textAlign: 'center' }}>
-        <button style={{ backgroundColor: 'lightgrey', color: 'black', fontWeight: 'bold', padding: '14px 20px', margin: '8px 0', border: 'none', cursor: 'pointer', marginTop: '50px' }}>
-          Book Tid
-        </button>
-      </div>
-    ),
-    imageBlock: (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img style={{marginBottom: '20px'}} src="https://placehold.co/600x400" />
-        <img src="https://placehold.co/600x400" />
-      </div>
-    )
+    rteBlock: {
+      title: 'Din Lokale Frisør',
+      content: 'Studievenlige priser',
+    },
+    buttonBlock: {
+      text: 'Book tid nu'
+    },
+    imageBlock: {
+      imageUrl: 'https://placehold.co/600x400',
+    }
   }
 }
 

@@ -1,13 +1,12 @@
 import React from 'react';
 import { GenericPage } from '@/app/components/genericPage';
 
-
 const PageHero = ({ pageData }: { pageData: any }) => {
 
   return (
-    <div style={{backgroundColor: 'white'}}>
+    <div>
       <h1>PageType: {pageData.pageId}</h1>
-      <GenericPage pageData={pageData} /> 
+      <GenericPage pageData={pageData} />
     </div>
   );
 };

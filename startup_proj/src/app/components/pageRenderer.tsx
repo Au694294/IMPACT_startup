@@ -5,8 +5,8 @@ import dynamic from 'next/dynamic';
 
 // Map pageId to component to lazy load the component
 const componentMap: { [key: string]: any } = {
-  pageBlockList: dynamic(() => import('@/app/components/blocks/pageBlockList')),
-  pageHero: dynamic(() => import('@/app/components/blocks/pageHero')),
+  pageBlockList: dynamic(() => import('@/app/components/pageTypes/pageBlockList'), { loading: () => <p>Loading...</p> }),
+  pageHero: dynamic(() => import('@/app/components/pageTypes/pageHero'), { loading: () => <p>Loading...</p> }),
   default: notFound
 };
 
