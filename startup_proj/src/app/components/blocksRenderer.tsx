@@ -10,7 +10,7 @@ const blockComponents: { [key: string]: any } = {
 };
 
 // BlockRenderer takes an array of blocks and returns components based on the block alias
-const BlockRenderer = ({ blocks }: { blocks: any[] }) => {
+const BlocksRenderer = ({ blocks }: { blocks: any[] }) => {
   return (
     <div>
       {/* Map over each block in the blocks array */}
@@ -28,4 +28,4 @@ const BlockRenderer = ({ blocks }: { blocks: any[] }) => {
   );
 };
 
-export default BlockRenderer;
+export default BlocksRenderer;

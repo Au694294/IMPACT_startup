@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 
 // Lazy load BlockRenderer
-const BlockRenderer = dynamic(() => import('./blockRenderer'), {loading: () => <p>Loading...</p>});
+const BlocksRenderer = dynamic(() => import('./blocksRenderer'), {loading: () => <p>Loading...</p>});
 
 // Generic page component, that renders blocks dynamically
 export const GenericPage = ({ pageData }: { pageData: any }) => {
@@ -15,7 +15,7 @@ export const GenericPage = ({ pageData }: { pageData: any }) => {
         pageData.blocks.map((block: any, index: number) => (
           <div key={index}>
             {/* Pass each block to BlockRenderer */}
-            <BlockRenderer blocks={[block]} />
+            <BlocksRenderer blocks={[block]} />
           </div>
         ))
       ) : (
